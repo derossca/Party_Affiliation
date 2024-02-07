@@ -30,6 +30,23 @@ public class Main {
         //let user input party choice
         partyChoice = in.nextLine();
 
+        //cascaded if structure that outputs correspondingly with the party choice chosen
 
+        if(partyChoice.equalsIgnoreCase("D"))
+        {
+            System.out.println("You get a Democrat Donkey");
+        }
+        else if(partyChoice.equalsIgnoreCase("R"))
+        {
+            System.out.println("You get a Republican Elephant");
+        }
+        else if(partyChoice.equalsIgnoreCase("I"))
+        {
+            System.out.println("You get an Independent Person");
+        }
+        //Do not need another else if as any other option is Other
+        else {
+            System.out.println("You get Other");
+        }
     }
 }
